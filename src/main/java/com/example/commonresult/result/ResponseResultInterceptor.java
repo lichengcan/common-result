@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 /**
  * 业务接口回参预处理拦截器
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Component
 public class ResponseResultInterceptor implements HandlerInterceptor {

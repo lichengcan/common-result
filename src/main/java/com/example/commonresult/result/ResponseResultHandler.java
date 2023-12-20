@@ -23,7 +23,7 @@ import javax.servlet.ServletRequest;
 
 /**
  * 业务接口回参处理拦截器
- * @author xiankun.geng
+ * @author lichengcan
  */
 public class ResponseResultHandler implements ResponseBodyAdvice<Object> {
     private static final Logger LOG = LoggerFactory.getLogger(ResponseResultHandler.class);

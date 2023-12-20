@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * 状态码预设枚举类
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Getter
 public enum ResultCode implements ResultCodeInterface {

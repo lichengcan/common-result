@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 业务接口统一回参格式
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Setter
 @Getter

@@ -5,7 +5,7 @@ import org.springframework.data.domain.Page;
 
 /**
  * 数据分页实体类
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Data
 public class ResultPagination {

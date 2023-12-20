@@ -6,7 +6,7 @@ import lombok.Setter;
 /**
  * 业务接口异常类
  *
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Setter
 @Getter

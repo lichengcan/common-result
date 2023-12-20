@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 针对 List 数据类型的返回格式
- * @author xiankun.geng
+ * @author lichengcan
  */
 @Data
 @NoArgsConstructor
