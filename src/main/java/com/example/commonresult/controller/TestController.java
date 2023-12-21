@@ -3,6 +3,7 @@ package com.example.commonresult.controller;
 import com.example.commonresult.result.PageRequest;
 import com.example.commonresult.result.ResponseResult;
 import com.example.commonresult.result.Result;
+import com.example.commonresult.result.ResultException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,6 +40,12 @@ public class TestController {
             list.add(i);
         }
         return Result.success(list);
+    }
+
+    @GetMapping("/exception")
+    public Result exception(Integer num){
+        int j = 10/num;
+        throw new ResultException("456","777");
     }
 
 
