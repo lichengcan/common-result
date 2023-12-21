@@ -1,11 +1,7 @@
 package com.example.commonresult.controller;
 
-import com.example.commonresult.result.PageRequest;
 import com.example.commonresult.result.ResponseResult;
 import com.example.commonresult.result.Result;
-import com.example.commonresult.result.ResultException;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,13 +16,13 @@ import java.util.Map;
  * @date: 2023-09-07 15:23
  * @description
  **/
-@ResponseResult
 @RestController
 @RequestMapping("/test")
+@ResponseResult
 public class TestController {
 
     @GetMapping("/test")
-    public Result test(Integer num){
+    public Object test(Integer num){
         Map map  = new HashMap();
         int j = 10/num;
         map.put(1,1);
@@ -34,19 +30,27 @@ public class TestController {
     }
 
     @GetMapping("/list")
-    public Result list(Integer num){
+    public List<Integer> list(Integer num){
         List<Integer> list = new ArrayList<>(num);
         for (int i = 0; i < num; i++) {
             list.add(i);
         }
-        return Result.success(list);
+        return list;
     }
 
     @GetMapping("/exception")
-    public Result exception(Integer num){
+    public void exception(Integer num){
         int j = 10/num;
-        throw new ResultException("456","777");
+    }
+
+    @GetMapping("/testString")
+    public String testString(Integer num){
+        return "李承灿大帅逼";
     }
 
 
+    @GetMapping("/testInteger")
+    public Integer testInteger(Integer num){
+        return num;
+    }
 }

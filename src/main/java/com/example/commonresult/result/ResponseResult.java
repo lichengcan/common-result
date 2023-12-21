@@ -1,13 +1,15 @@
 package com.example.commonresult.result;
 
-import java.lang.annotation.*;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
- * 业务接口回参处理注解类
- * @author lichengcan
+ * 统一返回注解
  */
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
-@Documented
 public @interface ResponseResult {
 }
