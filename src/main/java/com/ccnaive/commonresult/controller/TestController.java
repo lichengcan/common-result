@@ -1,7 +1,7 @@
-package com.example.commonresult.controller;
+package com.ccnaive.commonresult.controller;
 
-import com.example.commonresult.result.ResponseResult;
-import com.example.commonresult.result.Result;
+import com.ccnaive.commonresult.result.ResponseResult;
+import com.ccnaive.commonresult.result.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

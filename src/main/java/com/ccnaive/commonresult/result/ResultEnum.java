@@ -1,4 +1,4 @@
-package com.example.commonresult.result;
+package com.ccnaive.commonresult.result;
 
 /**
  * 常用结果的枚举

@@ -1,4 +1,4 @@
-package com.example.commonresult.result;
+package com.ccnaive.commonresult.result;
 
 import lombok.Data;
 

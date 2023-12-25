@@ -1,4 +1,4 @@
-package com.example.commonresult;
+package com.ccnaive.commonresult;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
