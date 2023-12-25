@@ -25,7 +25,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * basePackages 作用范围
  * @author lichengcan
  */
-@RestControllerAdvice(basePackages = "com.dataojo.haikangbasic")
+@RestControllerAdvice(basePackages = "com.example.commonresult")
 public class ResponseAdvice implements ResponseBodyAdvice<Object> {
 
     private static final Logger LOG = LoggerFactory.getLogger(ResponseAdvice.class);
@@ -64,11 +64,6 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
         if (body instanceof Result) {
             return body;
         }
-        //对String类型做处理
-        if(body instanceof String){
-            return JSON.toJSONString(body);
-        }
-        //Integer类型做处理
         return Result.success(body);
     }
 
