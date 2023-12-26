@@ -54,6 +54,12 @@ public class TestController {
         return test;
     }
 
+    @GetMapping("/testString2")
+    public Result<String> testString2(){
+        String test = new String("李承灿大帅");
+        return Result.success(test);
+    }
+
 
     @GetMapping("/testInteger")
     public Integer testInteger(Integer num){

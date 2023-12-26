@@ -60,7 +60,8 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
                                   Class<? extends HttpMessageConverter<?>> selectedConverterType,
                                   ServerHttpRequest request, ServerHttpResponse response) {
         // 提供一定的灵活度，如果body已经被包装了，就不进行包装
-        if (body instanceof Result) {
+        // 因为String不属于Result的子类，所以这里直接返回body
+        if (body instanceof Result||body instanceof String) {
             return body;
         }
         return Result.success(body);
