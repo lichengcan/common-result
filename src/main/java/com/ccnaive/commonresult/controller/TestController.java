@@ -48,6 +48,12 @@ public class TestController {
         return "李承灿大帅逼";
     }
 
+    @GetMapping("/testString1")
+    public String testString1(){
+        String test = new String("李承灿大帅逼");
+        return test;
+    }
+
 
     @GetMapping("/testInteger")
     public Integer testInteger(Integer num){

@@ -24,7 +24,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  * basePackages 作用范围
  * @author lichengcan
  */
-@RestControllerAdvice(basePackages = "com.example.commonresult")
+@RestControllerAdvice(basePackages = "com.ccnaive.commonresult")
 public class ResponseAdvice implements ResponseBodyAdvice<Object> {
 
     private static final Logger LOG = LoggerFactory.getLogger(ResponseAdvice.class);
